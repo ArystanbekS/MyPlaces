@@ -29,7 +29,7 @@ class TableViewController: UITableViewController {
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             var cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             cell.textLabel?.text = myFavouritePlaces[indexPath.row]
-            cell.imageView?.image = UIImage(named: "KFC ")
+            cell.imageView?.image = UIImage(named: myFavouritePlaces[indexPath.row])
 
         return cell
     }
